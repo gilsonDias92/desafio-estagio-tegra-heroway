@@ -1,13 +1,61 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Quicksand|Alegreya+Sans+SC|Bowlby+One+SC|Didact+Gothic&display=swap");
+
+@import url("./components/Main/style.css");
+@import url("./components/Main/SearchFlightBar/style.css");
+@import url("./components/Main/SearchFlightBar/ButtonSendInfo/style.css");
+@import url("./components/Main/SearchFlightBar/DateInput/style.css");
+@import url("./components/Main/SearchFlightBar/SelectAirportToInput/style.css");
+@import url("./components/Main/SearchFlightBar/SelectAirportFromInput/style.css");
+
+/* 
+
+Font config:
+  titles: 'Quicksand'
+  text: 'Didact Gothic'
+  buttons: 'Alegreya Sans SC'
+
+*/
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Didact Gothic", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 16px;
+}
+
+body {
+  background: url('./components/Main/assets/beach-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#root {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", cursive;
+}
+
+p,
+span {
+  font-family: "Didact Gothic", sans-serif;
+}
+
+button {
+  font-family: "Alegreya Sans SC", sans-serif;
+  letter-spacing: 0.2em;
 }

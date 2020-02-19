@@ -1,0 +1,10 @@
+.main-container {
+  width: 85%;
+  padding: 1em;
+  background: rgb(241, 238, 238, 0.7);
+  border-radius: 0.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

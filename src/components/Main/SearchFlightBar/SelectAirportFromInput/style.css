@@ -1,0 +1,17 @@
+.select-airport-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  margin-left: 0.5em;
+}
+
+.select-airports-list {
+  border: 0;
+  padding: 0.7em;
+}
+
+.select-airports-list option {
+  padding: 0.5em;
+}
