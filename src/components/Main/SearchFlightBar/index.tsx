@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as ReactRedux from "react-redux";
 
 import SelectAirportFromInput from "./SelectAirportFromInput";
@@ -9,9 +9,14 @@ import DateInput from "./DateInput";
 import ButtonSendInfo from "./ButtonSendInfo";
 
 export default function SearchFlightBar() {
+
+  const [airportFrom, setAirportFrom] = useState();
+  const [airportTo, setAirportTo] = useState();
+  const [date, setDate] = useState();
+
   const dispatch = ReactRedux.useDispatch();
   const airportsState = ReactRedux.useSelector((state: IAppState) => {
-    return state.airports; 
+    return state.airports;
   });
 
   const airportsList = airportsState.airports;
@@ -25,8 +30,10 @@ export default function SearchFlightBar() {
       <h3>Encontre as melhores condições para viajar!</h3>
       <form className="form-seach-flight-bar">
         <SelectAirportFromInput airportsList={airportsList} />
-        <SelectAirportToInput airportsList={airportsList}/>
+        <SelectAirportToInput airportsList={airportsList} />
         <DateInput />
+
+        
         <ButtonSendInfo />
       </form>
     </div>

@@ -4,6 +4,12 @@ interface IProps {
   airportsList: any;
 }
 
+function getAirportfrom(event) {
+  console.log(event);
+  
+  const airportFrom = event.selected.value;
+}
+
 const SelectAirportFromInput = (props: IProps) => {
   return (
     <>
