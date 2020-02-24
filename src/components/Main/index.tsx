@@ -1,12 +1,10 @@
 import React from "react";
-import SearchFlightBar from "./SearchFlightBar";
+import SearchFlightContainer from "./SearchFlightContainer";
 
-function Main() {
+export default function Main() {
   return (
     <div className="main-container">
-      <SearchFlightBar />
+      <SearchFlightContainer />
     </div>
   );
 }
-
-export default Main;

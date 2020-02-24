@@ -1,0 +1,55 @@
+.flights-table-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flights-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.table-title {
+  margin: 0.5em 0;
+  font-size: 1.6em;
+  color: rgb(25, 131, 90);
+}
+
+.table-column {
+  width: 10em;
+  padding: 1em;
+  border-bottom: 1px solid rgb(25, 131, 90);
+}
+
+.table-column-airport {
+  width: 25%;
+}
+
+.table-row-title {
+  color: #FFF;
+  font-size: 1.2em;
+  font-weight: 999;
+}
+
+.icon-table-flights {
+  margin-right: 0.25em;
+}
+
+.table-column-title {
+  padding: 1em;
+  background-color: rgb(25, 131, 90);
+}
+
+.warning-flights-table {
+  padding: 5em;
+  background-color: rgb(236, 232, 232);
+  margin-top: 1em;
+  border-radius: 1em;
+}
+
+.warning-flights-table .warning-flights-title {
+  color: rgb(25, 131, 90);
+  font-size: 2em;
+}

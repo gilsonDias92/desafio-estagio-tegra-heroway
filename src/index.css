@@ -1,20 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand|Alegreya+Sans+SC|Bowlby+One+SC|Didact+Gothic&display=swap");
 
 @import url("./components/Main/style.css");
-@import url("./components/Main/SearchFlightBar/style.css");
-@import url("./components/Main/SearchFlightBar/ButtonSendInfo/style.css");
-@import url("./components/Main/SearchFlightBar/DateInput/style.css");
-@import url("./components/Main/SearchFlightBar/SelectAirportToInput/style.css");
-@import url("./components/Main/SearchFlightBar/SelectAirportFromInput/style.css");
+@import url("./components/Main/SearchFlightContainer/style.css");
+@import url('./components/Main/SearchFlightContainer/FlightsTable/Loading/style.css');
+@import url('./components/Main/SearchFlightContainer/FlightsTable/style.css');
 
 /* 
-
 Font config:
   titles: 'Quicksand'
   text: 'Didact Gothic'
   buttons: 'Alegreya Sans SC'
-
 */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,13 +23,7 @@ html {
   font-size: 16px;
 }
 
-body {
-  background: url('./components/Main/assets/beach-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
 #root {
-  margin-top: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
